@@ -36,4 +36,11 @@ FROM table
 WHERE user_id IN @x 
 ```
 Currently string int and list of these two can be passed as a parameter. Note parameter needs to be preceeded by <b><u>@</u></b> in case one was planning to use @ just as character in that case please avaoid using parameter 
-
+## Installation 
+install via pip 
+open python environment run the following code 
+```python
+Big_Query_Project = 'My Project' # this is the name of the project on which the billing happens 
+from pandas_gbq_magic import magic 
+magic.install(Big_Query_Project)
+```
